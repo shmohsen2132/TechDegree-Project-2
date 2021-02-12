@@ -1,0 +1,75 @@
+/* General Styles */ 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:  0;
+    margin-bottom: 25px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Dosis';
+}
+
+header {
+    background-color: #BBB193;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* Header */ 
+
+.profile-pic {
+    max-width: 90%;
+    margin-bottom: 25px;
+}
+
+.profile-paragraph {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 25px;
+    background-color: #F6F0ED;
+    padding: 10px 50px;
+}
+
+
+.portfolio-pic {
+    max-width: 100%;
+}
+
+/* Main */ 
+
+main {
+    background-color: #C2948A;
+    padding: 20px;
+    
+}
+h2 {
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Footer */
+
+.name-bottom {
+    float: left;
+}
+
+.bottom-link {
+    float: right;
+}
