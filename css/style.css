@@ -20,6 +20,7 @@ header {
 
 /* Header */ 
 
+
 .profile-pic {
     max-width: 90%;
     margin-bottom: 25px;
@@ -46,6 +47,11 @@ li {
     padding: 10px 50px;
 }
 
+li a:hover {
+    text-decoration: none;
+    color: skyblue
+}
+
 
 .portfolio-pic {
     max-width: 100%;
@@ -68,8 +74,81 @@ h2 {
 
 .name-bottom {
     float: left;
+    margin-left: 10px;
 }
 
 .bottom-link {
     float: right;
+    margin-right: 10px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.bottom-link:hover {
+    color: skyblue;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        background-color: #BBB193;
+
+    }
+
+    .header-description {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .header-description img {
+        flex-basis: 40%;
+    }
+
+    .header-description p {
+        flex-basis: 55%;
+        text-align: left;
+        font-size: 25px;
+        line-height: 2.3rem;
+    }
+
+    .portfolio-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .portfolio-item1,
+    .portfolio-item2,
+    .portfolio-item3,
+    .portfolio-item4,
+    .portfolio-item5,
+    .portfolio-item6 {
+        flex-basis: 45%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .portfolio-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio-item1,
+    .portfolio-item2,
+    .portfolio-item3,
+    .portfolio-item4,
+    .portfolio-item5,
+    .portfolio-item6 {
+        flex-basis: 30%;
+    }
 }
