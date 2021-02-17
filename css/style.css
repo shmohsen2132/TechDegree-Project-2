@@ -57,7 +57,8 @@ h1 {
     background-color: #F6F0ED;
     padding: 10px 30px;
     margin: 0 auto;
-    width: 365px;
+    width: 160px;
+    border-radius: 10px;
 }
 
 
@@ -129,6 +130,10 @@ h2 {
 
 @media screen and (min-width: 768px) {
 
+    h1 {
+        margin-bottom: 50px;
+    }
+
     .navigation-top {
         display: flex;
         justify-content: center;
@@ -154,7 +159,7 @@ h2 {
         text-align: left;
         font-size: 25px;
         line-height: 2.3rem;
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .portfolio-wrapper {
@@ -227,6 +232,9 @@ h2 {
 
 
 @media screen and (min-width: 1024px) {
+    h1 {
+        margin-bottom: 0px;
+    }
 
     .header-nav {
         display: flex;
@@ -258,7 +266,7 @@ h2 {
     li:last-child {
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-right: 0px;
+        padding-right: 0px !important;
         padding-left: 40px;
     }
 
@@ -272,6 +280,11 @@ h2 {
     }
 
     .skills-img {
-        width: 60%;
+        width: 40%;
     }
+    
+    .navigation-top li {
+        width: 99%;
+    }
+
 }
