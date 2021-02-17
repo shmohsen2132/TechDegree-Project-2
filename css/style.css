@@ -14,11 +14,12 @@ body {
 
 header {
     background-color: #BBB193;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 0;
 }
 
 /* Header */ 
+
 
 
 .profile-pic {
@@ -26,28 +27,42 @@ header {
     margin-bottom: 25px;
 }
 
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: skyblue;
+}
+
 .profile-paragraph {
     margin-bottom: 25px;
+    font-size: 22px;
 }
 
 h1 {
     font-weight: 700;
-    margin-bottom: 25px;
 }
 
-ul {
+.navigation-top {
     list-style: none;
     width: 80%;
     margin: 0 auto;
 }
 
-li {
-    margin-bottom: 25px;
+.navigation-top li {
+    margin-bottom: 25px !important;
     background-color: #F6F0ED;
-    padding: 10px 50px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    width: 365px;
 }
 
-li a:hover {
+
+
+.navigation-top li a:hover {
     text-decoration: none;
     color: skyblue
 }
@@ -69,13 +84,19 @@ h2 {
     margin-bottom: 25px;
 }
 
+.skills-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.skills-img {
+    width: 80%;
+}
+
 
 /* Footer */
 
-.name-bottom {
-    float: left;
-    margin-left: 10px;
-}
+
 
 .bottom-link {
     float: right;
@@ -89,15 +110,31 @@ h2 {
     color: skyblue;
 }
 
+.contact h3 {
+    font-size: 22px;
+}
+
+.navigation-bottom {
+    display: none;
+}
+
+.name-bottom {
+    float: left;
+    margin-left: 10px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 
 @media screen and (min-width: 768px) {
 
-    ul {
+    .navigation-top {
         display: flex;
         justify-content: center;
     }
 
-    ul li {
+    .navigation-top li {
         background-color: #BBB193;
 
     }
@@ -113,10 +150,11 @@ h2 {
     }
 
     .header-description p {
-        flex-basis: 55%;
+        flex-basis: 52%;
         text-align: left;
         font-size: 25px;
         line-height: 2.3rem;
+        margin-right: 10px;
     }
 
     .portfolio-wrapper {
@@ -133,10 +171,75 @@ h2 {
     .portfolio-item6 {
         flex-basis: 45%;
     }
+
+    .bottom-link {
+        display: none;
+    }
+
+    
+
+    .bottom-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .header-nav-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .navigation-bottom {
+        list-style: none;
+        width: 80%;
+        display: flex;
+        margin-right: 15px;
+    }
+    
+    .navigation-bottom li {
+        margin-bottom: 25px;
+        background-color: transparent;
+        padding: 5px 20px;
+        font-size: 20px;
+        padding-top: 0 !important;
+        font-weight: 700;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    
+    .name-bottom {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .skills-img {
+        width: 50%;
+    }
+    
+    .name-bottom {
+        font-size: 20px;
+    }
+
+    
 }
 
 
 @media screen and (min-width: 1024px) {
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    
     .portfolio-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -150,5 +253,25 @@ h2 {
     .portfolio-item5,
     .portfolio-item6 {
         flex-basis: 30%;
+    }
+
+    li:last-child {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0px;
+        padding-left: 40px;
+    }
+
+    .navigation-bottom li {
+        margin-bottom: 25px;
+        background-color: transparent;
+        padding: 10px 30px;
+        font-size: 30px;
+        padding-top: 0 !important;
+        font-weight: 700;
+    }
+
+    .skills-img {
+        width: 60%;
     }
 }
